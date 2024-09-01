@@ -1,0 +1,15 @@
+{
+   "name":"ShinyIngrid",
+   "teamSize":10,
+   "hobbies":["Cooking","Reading"],
+   "pojoChild":
+             [
+              {
+               "designation":"TeamLead",
+               "company":"CTS"
+               },
+               {
+                 "designation":"Manager",
+                  "company":"TCS"}
+                  ]
+ }

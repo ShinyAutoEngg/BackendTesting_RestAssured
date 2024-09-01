@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "string"
+    },
+    "product": {
+      "type": "object",
+      "properties": {
+        "weight": {
+          "type": "integer"
+        },
+        "prodName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "weight",
+        "prodName"
+      ]
+    },
+    "shipping": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "type": "string"
+            },
+            "days": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "mode",
+            "days"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "type": "string"
+            },
+            "days": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "mode",
+            "days"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "location",
+    "id",
+    "email",
+    "product",
+    "shipping"
+ 
